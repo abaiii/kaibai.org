@@ -36,7 +36,7 @@ const SecondRoadOfBells = () => {
                     Half-done
                 </SectionTitle>
                 <UnorderedList mt={2}>
-                    <ListItem><NoticeableLink href='2rob/diana/'>Diana Jiang</NoticeableLink> (well, this is technically Francie's elder sister, so I treat it like my own OC rather than my own identity) </ListItem>
+                    <ListItem><NoticeableLink href='2rob/diana/'>Diana Jiang</NoticeableLink> (well, this is technically Francie&apos;s elder sister, so I treat it like my own OC rather than my own identity) </ListItem>
                 </UnorderedList>
 
                 <SectionTitle>
