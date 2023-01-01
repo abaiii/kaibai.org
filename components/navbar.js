@@ -1,7 +1,7 @@
 import { Container, Box, Text, Link, Button, useControllableProp, useControllableState } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import { Inter } from '@next/font/google'
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
+import { HamburgerIcon } from '@chakra-ui/icons'
 import React from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -16,7 +16,7 @@ const Navbar = () => {
     })
 
     return (
-        <Container maxW='container.md' mt={8} display='flex' flexDir={{ base: 'column', md: 'row' }}>
+        <Container maxW='container.lg' mt={8} display='flex' flexDir={{ base: 'column', md: 'row' }}>
 
             <Box w='100%' display='flex' alignItems='center'>
                 <Box w='100%'>
@@ -53,6 +53,8 @@ const Navbar = () => {
                 <Link href='https://blog.kaibai.org' as={NextLink} isExternal>My blog</Link>
                 <Link href='/contact' as={NextLink}>Contact me</Link>
                 <Link href='/blogroll' as={NextLink}>Friends</Link>
+                <Link href='/2rob' as={NextLink}> <em>The House</em> </Link>
+                {/* <Link href='/counter' as={NextLink}>The counter</Link> */}
             </Box>
 
         </Container>

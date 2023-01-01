@@ -1,44 +1,16 @@
 import Head from 'next/head'
 import { Container, Text, Divider, Code, Link } from '@chakra-ui/react'
-import { Barlow, Nunito_Sans, Fira_Code } from '@next/font/google'
+import { Barlow, Nunito_Sans } from '@next/font/google'
 import Navbar from '../components/navbar'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import NoticeableLink from '../components/NoticeableLink'
+import SectionTitle from '../components/SectionTitle'
 
 
 const barlow = Barlow({ weight: ['500', '600'], subsets: ['latin'] })
 const ns = Nunito_Sans({ weight: '400', subsets: ['latin'] })
-const fc = Fira_Code({ weight: '400', subsets: ['latin'] })
 
 
-const SectionTitle = ({ children }) => {
-  return (
-    <Text fontSize="2xl" className={barlow.className} mt={2} mb={2} fontWeight='semibold'>
-      {children}
-    </Text>
-  )
-}
 
-const Cd = ({ children }) => {
-  return (
-    <Code className={fc.className}>
-      {children}
-    </Code>
-  )
-}
-
-const NoticeableLink = ({ href, children }) => {
-  return (
-    <>
-      <span style={{display: 'inline-flex', alignItems: 'center'}}>
-        <Link href={href}>
-          {children}
-        </Link>
-        <ExternalLinkIcon ml={1} />
-      </span>
-
-    </>
-  )
-}
 
 const Bai = () => {
   return (
@@ -48,7 +20,7 @@ const Bai = () => {
       </Head>
       <Navbar />
 
-      <Container maxW='container.md' mt={10} className={ns.className} fontSize='lg'>
+      <Container maxW='container.lg' mt={10} className={ns.className} fontSize='lg'>
 
         <Text fontSize='4xl' className={barlow.className}>
           Francie Jiang
@@ -72,7 +44,7 @@ const Bai = () => {
         Francie Jiang speaks Chinese primarily and English frequently. Yes, there is no conflict in the
         previous sentence. <br />
 
-        She writes <Cd>Javascript</Cd> mainly now, but she wrote <Cd>[C++, Python]</Cd> before so she is familiar with them.
+        She writes <Code>Javascript</Code> mainly now, but she wrote <Code>[C++, Python]</Code> before so she is familiar with them.
 
         <SectionTitle>
           Games played
@@ -85,7 +57,6 @@ const Bai = () => {
         </SectionTitle>
 
         Francie likes ZUTOMAYO, yama, and YOASOBI.
-        {/* You may turn to <NoticeableLink href='/music'>this page</NoticeableLink> to see what she is listening to recently. */}
 
         <SectionTitle>
           Behind this site
