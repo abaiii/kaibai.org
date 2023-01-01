@@ -24,7 +24,7 @@ const SecondRoadOfBells = () => {
                     Done Writing
                 </SectionTitle>
                 <UnorderedList mt={2}>
-                    <ListItem>Her real-life identity (whose information is redacted)</ListItem>
+                    <ListItem>Her real-life identity (whose information is deleted for privacy)</ListItem>
                     <ListItem><NoticeableLink href='2rob/francie/'>Francie Jiang</NoticeableLink></ListItem>
                     {/* <ListItem><NoticeableLink href='2rob/diana/'>Diana Jiang</NoticeableLink> (well, this is technically Francie's elder sister, so I treat it like my own OC rather than my own identity) </ListItem> */}
                     {/* <ListItem><NoticeableLink href='2rob/ery/'>Ery Kolde</NoticeableLink></ListItem> */}
