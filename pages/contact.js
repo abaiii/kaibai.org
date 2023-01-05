@@ -13,7 +13,7 @@ const Contact = () => {
             <title>Contact me | Kaibai.org</title>
         </Head>
             <Navbar />
-            <Container maxW='container.md' className={ns.className} mt={10}>
+            <Container maxW='container.lg' className={ns.className} mt={10}>
                 <Text fontSize='4xl' className={barlow.className}>
                     Contact me
                 </Text>

@@ -46,7 +46,7 @@ const Blogroll = () => {
                 <title>My friends | Kaibai.org</title>
             </Head>
             <Navbar />
-            <Container maxW='container.md' mt={10} className={ns.className}>
+            <Container maxW='container.lg' mt={10} className={ns.className}>
                 <Text fontSize='3xl' className={barlow.className}>
                     My friends
                 </Text>
